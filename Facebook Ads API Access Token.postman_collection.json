@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "XXXXXX",
+		"name": "Facebook Ads API Access Token",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://graph.facebook.com/v4.0/*Enter your system user ID*/access_tokens?access_token=*Enter your access token*",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "business_app",
+							"value": "*Enter your Facebook App ID*",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "ads_management,manage_pages",
+							"type": "text"
+						},
+						{
+							"key": "access_token",
+							"value": "*Enter your access token*",
+							"type": "text"
+						},
+						{
+							"key": "appsecret_proof",
+							"value": "*Enter your appsecret proof*",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://graph.facebook.com/v4.0/*Enter your system user ID*/access_tokens?access_token=*Enter your access token*",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v4.0",
+						"*Enter your system user ID*",
+						"access_tokens"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "*Enter your access token*"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
